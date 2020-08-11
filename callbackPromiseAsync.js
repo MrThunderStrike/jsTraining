@@ -1,12 +1,27 @@
 // server response simulation function start
 function serverResponseSimulation() {
-    let isResponse = true;
+    let isResponse = false;
     let timer =  ((Math.random() * 10).toFixed(0)) * 1000;
     return setTimeout(() => {
-        console.log(timer);
+        isResponse;
         console.log(isResponse);
     }, timer);
 }
-serverResponseSimulation();
+// let a = serverResponseSimulation();
+let a = true;
+console.log(a);
 // end
 
+// callback training start 
+
+// function processingData(data) {
+//     console.log("Data:" + data );
+// }
+
+// function receiveSimulationCallback(callback) {
+//     let receivedData = serverResponseSimulation();
+//     console.log(receivedData);
+//     callback(receivedData);
+// }
+
+// receiveSimulationCallback(processingData);
